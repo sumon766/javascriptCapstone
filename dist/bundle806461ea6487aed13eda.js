@@ -20,9 +20,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);"]);
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* Fonts */\r\n\r\n/* 1rem = 10px */\r\nhtml {\r\n  font-size: 62.5%;\r\n}\r\n\r\n/* Color palette */\r\n:root {\r\n  --dark-blue: #122c34;\r\n  --mild-blue: #224870;\r\n  --blue-blue: #2a4494;\r\n  --light-blue: #4ea5d9;\r\n  --water-blue: #44cfcb;\r\n  --text-white: #fff;\r\n  --gold: #dbae25;\r\n  --heart-red: rgb(223, 2, 2);\r\n  --count-hover: rgb(179, 4, 4);\r\n}\r\n\r\n* {\r\n  padding: 0;\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  font-family: 'Poppins', sans-serif;\r\n  font-size: 1.6rem;\r\n}\r\n\r\n/* Header */\r\nheader {\r\n  padding: 2rem 0;\r\n  background-color: var(--dark-blue);\r\n  border-bottom: var(--light-blue);\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-around;\r\n}\r\n\r\n.logo {\r\n  font-size: 2.5rem;\r\n  font-weight: 600;\r\n  text-decoration: none;\r\n  text-transform: capitalize;\r\n  color: var(--gold);\r\n}\r\n\r\n.logo:hover {\r\n  text-decoration: underline;\r\n}\r\n\r\n.nav {\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-around;\r\n  column-gap: 1rem;\r\n  margin-left: 1rem;\r\n}\r\n\r\n.nav ul {\r\n  display: flex;\r\n  list-style: none;\r\n  justify-content: space-between;\r\n  column-gap: 1rem;\r\n}\r\n\r\n.nav-item a {\r\n  font-size: 1.9rem;\r\n  color: var(--text-white);\r\n  text-decoration: none;\r\n}\r\n\r\n.nav-item a:hover {\r\n  color: var(--gold);\r\n}\r\n\r\n.nav-item {\r\n  color: var(--heart-red);\r\n}\r\n\r\n.nav-item:hover {\r\n  color: var(--count-hover);\r\n}\r\n\r\n#search {\r\n  padding: 0.7rem;\r\n  border-radius: 0.5rem;\r\n  border: 0;\r\n}\r\n\r\n/* Footer */\r\nfooter {\r\n  text-align: center;\r\n  padding: 2rem 0;\r\n  background-color: var(--dark-blue);\r\n  color: var(--text-white);\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA,UAAU;;AAGV,gBAAgB;AAChB;EACE,gBAAgB;AAClB;;AAEA,kBAAkB;AAClB;EACE,oBAAoB;EACpB,oBAAoB;EACpB,oBAAoB;EACpB,qBAAqB;EACrB,qBAAqB;EACrB,kBAAkB;EAClB,eAAe;EACf,2BAA2B;EAC3B,6BAA6B;AAC/B;;AAEA;EACE,UAAU;EACV,SAAS;EACT,sBAAsB;AACxB;;AAEA;EACE,kCAAkC;EAClC,iBAAiB;AACnB;;AAEA,WAAW;AACX;EACE,eAAe;EACf,kCAAkC;EAClC,gCAAgC;EAChC,aAAa;EACb,qBAAqB;EACrB,6BAA6B;AAC/B;;AAEA;EACE,iBAAiB;EACjB,gBAAgB;EAChB,qBAAqB;EACrB,0BAA0B;EAC1B,kBAAkB;AACpB;;AAEA;EACE,0BAA0B;AAC5B;;AAEA;EACE,aAAa;EACb,qBAAqB;EACrB,6BAA6B;EAC7B,gBAAgB;EAChB,iBAAiB;AACnB;;AAEA;EACE,aAAa;EACb,gBAAgB;EAChB,8BAA8B;EAC9B,gBAAgB;AAClB;;AAEA;EACE,iBAAiB;EACjB,wBAAwB;EACxB,qBAAqB;AACvB;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,uBAAuB;AACzB;;AAEA;EACE,yBAAyB;AAC3B;;AAEA;EACE,eAAe;EACf,qBAAqB;EACrB,SAAS;AACX;;AAEA,WAAW;AACX;EACE,kBAAkB;EAClB,eAAe;EACf,kCAAkC;EAClC,wBAAwB;AAC1B","sourcesContent":["/* Fonts */\r\n@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');\r\n\r\n/* 1rem = 10px */\r\nhtml {\r\n  font-size: 62.5%;\r\n}\r\n\r\n/* Color palette */\r\n:root {\r\n  --dark-blue: #122c34;\r\n  --mild-blue: #224870;\r\n  --blue-blue: #2a4494;\r\n  --light-blue: #4ea5d9;\r\n  --water-blue: #44cfcb;\r\n  --text-white: #fff;\r\n  --gold: #dbae25;\r\n  --heart-red: rgb(223, 2, 2);\r\n  --count-hover: rgb(179, 4, 4);\r\n}\r\n\r\n* {\r\n  padding: 0;\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  font-family: 'Poppins', sans-serif;\r\n  font-size: 1.6rem;\r\n}\r\n\r\n/* Header */\r\nheader {\r\n  padding: 2rem 0;\r\n  background-color: var(--dark-blue);\r\n  border-bottom: var(--light-blue);\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-around;\r\n}\r\n\r\n.logo {\r\n  font-size: 2.5rem;\r\n  font-weight: 600;\r\n  text-decoration: none;\r\n  text-transform: capitalize;\r\n  color: var(--gold);\r\n}\r\n\r\n.logo:hover {\r\n  text-decoration: underline;\r\n}\r\n\r\n.nav {\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-around;\r\n  column-gap: 1rem;\r\n  margin-left: 1rem;\r\n}\r\n\r\n.nav ul {\r\n  display: flex;\r\n  list-style: none;\r\n  justify-content: space-between;\r\n  column-gap: 1rem;\r\n}\r\n\r\n.nav-item a {\r\n  font-size: 1.9rem;\r\n  color: var(--text-white);\r\n  text-decoration: none;\r\n}\r\n\r\n.nav-item a:hover {\r\n  color: var(--gold);\r\n}\r\n\r\n.nav-item {\r\n  color: var(--heart-red);\r\n}\r\n\r\n.nav-item:hover {\r\n  color: var(--count-hover);\r\n}\r\n\r\n#search {\r\n  padding: 0.7rem;\r\n  border-radius: 0.5rem;\r\n  border: 0;\r\n}\r\n\r\n/* Footer */\r\nfooter {\r\n  text-align: center;\r\n  padding: 2rem 0;\r\n  background-color: var(--dark-blue);\r\n  color: var(--text-white);\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* Fonts */\r\n\r\n/* 1rem = 10px */\r\nhtml {\r\n  font-size: 62.5%;\r\n}\r\n\r\n/* Color palette */\r\n:root {\r\n  --dark-blue: #122c34;\r\n  --mild-blue: #224870;\r\n  --blue-blue: #2a4494;\r\n  --light-blue: #4ea5d9;\r\n  --water-blue: #44cfcb;\r\n  --text-white: #fff;\r\n  --gold: #dbae25;\r\n  --heart-red: rgb(223, 2, 2);\r\n  --count-hover: rgb(179, 4, 4);\r\n}\r\n\r\n* {\r\n  padding: 0;\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  font-family: 'Poppins', sans-serif;\r\n  font-size: 1.6rem;\r\n}\r\n\r\n/* Header */\r\nheader {\r\n  padding: 2rem 0;\r\n  background-color: var(--dark-blue);\r\n  border-bottom: var(--light-blue);\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-around;\r\n}\r\n\r\n.logo {\r\n  font-size: 2.5rem;\r\n  font-weight: 600;\r\n  text-decoration: none;\r\n  text-transform: capitalize;\r\n  color: var(--gold);\r\n}\r\n\r\n.logo:hover {\r\n  text-decoration: underline;\r\n}\r\n\r\n.nav {\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-around;\r\n  column-gap: 1rem;\r\n  margin-left: 1rem;\r\n}\r\n\r\n.nav ul {\r\n  display: flex;\r\n  list-style: none;\r\n  justify-content: space-between;\r\n  column-gap: 1rem;\r\n}\r\n\r\n.nav-item a {\r\n  font-size: 1.9rem;\r\n  color: var(--text-white);\r\n  text-decoration: none;\r\n}\r\n\r\n.nav-item a:hover {\r\n  color: var(--gold);\r\n}\r\n\r\n.nav-item {\r\n  color: var(--heart-red);\r\n}\r\n\r\n.nav-item:hover {\r\n  color: var(--count-hover);\r\n}\r\n\r\n#search {\r\n  padding: 0.7rem;\r\n  border-radius: 0.5rem;\r\n  border: 0;\r\n}\r\n\r\n#tv-container {\r\n  width: 75%;\r\n  margin: 0 auto;\r\n}\r\n\r\n.programmes {\r\n  display: grid;\r\n  grid-template-columns: auto auto auto;\r\n  column-gap: 8%;\r\n  margin: 60px 0px;\r\n}\r\n\r\n.program {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin-bottom: 35px;\r\n}\r\n\r\n.program img {\r\n  width: 100%;\r\n  height: 350px;\r\n  margin-bottom: 15px;\r\n}\r\n\r\n.program h2 {\r\n  font-size: 18px;\r\n  font-family: 'Inter', sans-serif;\r\n  font-weight: 700;\r\n  color: #122c34;\r\n}\r\n\r\n.like-count {\r\n  margin: 12px 0px;\r\n}\r\n\r\n.program button {\r\n  border: none;\r\n  background-color: #2a4494;\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  font-weight: normal;\r\n  color: #fff;\r\n  cursor: pointer;\r\n  padding: 10px 0px;\r\n}\r\n\r\n.modal {\r\n  display: none;\r\n  position: fixed; \r\n  z-index: 1; \r\n  padding-top: 100px; \r\n  left: 0;\r\n  top: 0;\r\n  width: 100%; \r\n  height: 100%; \r\n  overflow: auto; \r\n  background-color: rgb(0,0,0); \r\n  background-color: rgba(0,0,0,0.4); \r\n}\r\n\r\n.modal-content {\r\n  background-color: #fefefe;\r\n  margin: auto;\r\n  padding: 20px;\r\n  border: 1px solid #888;\r\n  width: 80%;\r\n  display: flex;\r\n  flex-direction: column;\r\n  position: relative;\r\n}\r\n\r\n.close {\r\n  color: #aaaaaa;\r\n  float: right;\r\n  font-size: 50px;\r\n  font-weight: bold;\r\n  position: absolute;\r\n  right: 20px;\r\n}\r\n\r\n.close:hover,\r\n.close:focus {\r\n  color: #000;\r\n  text-decoration: none;\r\n  cursor: pointer;\r\n}\r\n\r\n.modal-image-title {\r\n  display: flex;\r\n}\r\n\r\n.modal-image-title img {\r\n  width: auto;\r\n  height: 450px;\r\n}\r\n\r\n.modal-description {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin: 0 50px;\r\n}\r\n\r\n.modal-description h2 {\r\n  font-size: 25px;\r\n  font-family: 'Poppins', sans-serif;\r\n  font-weight: 700;\r\n  color: #122c34;\r\n}\r\n\r\n.modal-description p {\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  color: #1f2e33;\r\n  margin: 20px 0;\r\n}\r\n\r\n.modal-description p span {\r\n  font-family: 'Inter', sans-serif;\r\n  font-size: 18px;\r\n  font-weight: 700;\r\n}\r\n\r\n#comment-form {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\nfieldset {\r\n  padding: 15px 20px;\r\n}\r\n\r\ninput {\r\n  padding: 10px;\r\n  width: 100%;\r\n  border: none;\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n}\r\n\r\ntextarea {\r\n  padding: 10px;\r\n  width: 100%;\r\n  border: none;\r\n  margin: 15px 0;\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  height: 100px;\r\n}\r\n\r\ninput[type=submit] {\r\n  width: fit-content;\r\n  background-color: #2a4494;\r\n  color: #fff;\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  border-radius: 3px;\r\n}\r\n\r\n/* Footer */\r\nfooter {\r\n  text-align: center;\r\n  padding: 2rem 0;\r\n  background-color: var(--dark-blue);\r\n  color: var(--text-white);\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"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","sourcesContent":["/* Fonts */\r\n@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap');\r\n\r\n/* 1rem = 10px */\r\nhtml {\r\n  font-size: 62.5%;\r\n}\r\n\r\n/* Color palette */\r\n:root {\r\n  --dark-blue: #122c34;\r\n  --mild-blue: #224870;\r\n  --blue-blue: #2a4494;\r\n  --light-blue: #4ea5d9;\r\n  --water-blue: #44cfcb;\r\n  --text-white: #fff;\r\n  --gold: #dbae25;\r\n  --heart-red: rgb(223, 2, 2);\r\n  --count-hover: rgb(179, 4, 4);\r\n}\r\n\r\n* {\r\n  padding: 0;\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  font-family: 'Poppins', sans-serif;\r\n  font-size: 1.6rem;\r\n}\r\n\r\n/* Header */\r\nheader {\r\n  padding: 2rem 0;\r\n  background-color: var(--dark-blue);\r\n  border-bottom: var(--light-blue);\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-around;\r\n}\r\n\r\n.logo {\r\n  font-size: 2.5rem;\r\n  font-weight: 600;\r\n  text-decoration: none;\r\n  text-transform: capitalize;\r\n  color: var(--gold);\r\n}\r\n\r\n.logo:hover {\r\n  text-decoration: underline;\r\n}\r\n\r\n.nav {\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-around;\r\n  column-gap: 1rem;\r\n  margin-left: 1rem;\r\n}\r\n\r\n.nav ul {\r\n  display: flex;\r\n  list-style: none;\r\n  justify-content: space-between;\r\n  column-gap: 1rem;\r\n}\r\n\r\n.nav-item a {\r\n  font-size: 1.9rem;\r\n  color: var(--text-white);\r\n  text-decoration: none;\r\n}\r\n\r\n.nav-item a:hover {\r\n  color: var(--gold);\r\n}\r\n\r\n.nav-item {\r\n  color: var(--heart-red);\r\n}\r\n\r\n.nav-item:hover {\r\n  color: var(--count-hover);\r\n}\r\n\r\n#search {\r\n  padding: 0.7rem;\r\n  border-radius: 0.5rem;\r\n  border: 0;\r\n}\r\n\r\n#tv-container {\r\n  width: 75%;\r\n  margin: 0 auto;\r\n}\r\n\r\n.programmes {\r\n  display: grid;\r\n  grid-template-columns: auto auto auto;\r\n  column-gap: 8%;\r\n  margin: 60px 0px;\r\n}\r\n\r\n.program {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin-bottom: 35px;\r\n}\r\n\r\n.program img {\r\n  width: 100%;\r\n  height: 350px;\r\n  margin-bottom: 15px;\r\n}\r\n\r\n.program h2 {\r\n  font-size: 18px;\r\n  font-family: 'Inter', sans-serif;\r\n  font-weight: 700;\r\n  color: #122c34;\r\n}\r\n\r\n.like-count {\r\n  margin: 12px 0px;\r\n}\r\n\r\n.program button {\r\n  border: none;\r\n  background-color: #2a4494;\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  font-weight: normal;\r\n  color: #fff;\r\n  cursor: pointer;\r\n  padding: 10px 0px;\r\n}\r\n\r\n.modal {\r\n  display: none;\r\n  position: fixed; \r\n  z-index: 1; \r\n  padding-top: 100px; \r\n  left: 0;\r\n  top: 0;\r\n  width: 100%; \r\n  height: 100%; \r\n  overflow: auto; \r\n  background-color: rgb(0,0,0); \r\n  background-color: rgba(0,0,0,0.4); \r\n}\r\n\r\n.modal-content {\r\n  background-color: #fefefe;\r\n  margin: auto;\r\n  padding: 20px;\r\n  border: 1px solid #888;\r\n  width: 80%;\r\n  display: flex;\r\n  flex-direction: column;\r\n  position: relative;\r\n}\r\n\r\n.close {\r\n  color: #aaaaaa;\r\n  float: right;\r\n  font-size: 50px;\r\n  font-weight: bold;\r\n  position: absolute;\r\n  right: 20px;\r\n}\r\n\r\n.close:hover,\r\n.close:focus {\r\n  color: #000;\r\n  text-decoration: none;\r\n  cursor: pointer;\r\n}\r\n\r\n.modal-image-title {\r\n  display: flex;\r\n}\r\n\r\n.modal-image-title img {\r\n  width: auto;\r\n  height: 450px;\r\n}\r\n\r\n.modal-description {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin: 0 50px;\r\n}\r\n\r\n.modal-description h2 {\r\n  font-size: 25px;\r\n  font-family: 'Poppins', sans-serif;\r\n  font-weight: 700;\r\n  color: #122c34;\r\n}\r\n\r\n.modal-description p {\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  color: #1f2e33;\r\n  margin: 20px 0;\r\n}\r\n\r\n.modal-description p span {\r\n  font-family: 'Inter', sans-serif;\r\n  font-size: 18px;\r\n  font-weight: 700;\r\n}\r\n\r\n#comment-form {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\nfieldset {\r\n  padding: 15px 20px;\r\n}\r\n\r\ninput {\r\n  padding: 10px;\r\n  width: 100%;\r\n  border: none;\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n}\r\n\r\ntextarea {\r\n  padding: 10px;\r\n  width: 100%;\r\n  border: none;\r\n  margin: 15px 0;\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  height: 100px;\r\n}\r\n\r\ninput[type=submit] {\r\n  width: fit-content;\r\n  background-color: #2a4494;\r\n  color: #fff;\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  border-radius: 3px;\r\n}\r\n\r\n/* Footer */\r\nfooter {\r\n  text-align: center;\r\n  padding: 2rem 0;\r\n  background-color: var(--dark-blue);\r\n  color: var(--text-white);\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -467,6 +467,16 @@ function styleTagTransform(css, styleElement) {
 }
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./src/images/movie.jpg":
+/*!******************************!*\
+  !*** ./src/images/movie.jpg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "src/images/movie.jpg";
+
 /***/ })
 
 /******/ 	});
@@ -520,6 +530,18 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -536,6 +558,26 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
@@ -550,10 +592,31 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
+/* harmony import */ var _images_movie_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/movie.jpg */ "./src/images/movie.jpg");
 
+
+
+// Movie Details Modal
+var modal = document.getElementById("comment-modal");
+var btn = document.getElementById("comment-button");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundled4e3c1d9e7f4c3acbcef.js.map
+//# sourceMappingURL=bundle806461ea6487aed13eda.js.map

@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Awesome tv api project</title>
-<script defer src="bundled4e3c1d9e7f4c3acbcef.js"></script></head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script defer src="bundle806461ea6487aed13eda.js"></script></head>
 
 <body>
     <header>
@@ -16,13 +17,96 @@
                 <li class="nav-item">
                     <a href="#">Home</a> <span id="show-counter"></span>
                 </li>
+                <li class="nav-item"><a href="#">Movies</a></li>
                 <li class="nav-item"><a href="#">About</a></li>
             </ul>
             <input type="text" placeholder="Search..." id="search" />
         </nav>
     </header>
     <main class="main">
-        <section id="tv-container"></section>
+        <section id="tv-container">
+            <div class="programmes">
+                <div class="program">
+                    <img src="../src/images/movie.jpg" alt="Movie image">
+                    <h2>Mission Impossible</h2>
+                    <div class="like-count">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        5 likes
+                    </div>
+                    <button type="button" id="comment-button">Comment</button>
+                    <div id="comment-modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close">&times;</span>
+                            <div class="modal-image-title">
+                                <img src="../src/images/movie.jpg" alt="Movie image">
+                                <div class="modal-description">
+                                    <h2>Mission Impossible</h2>
+                                    <p><span>Storyline: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quisquam ullam tenetur esse itaque error excepturi, repellat praesentium a ipsum rerum, laborum at quasi quibusdam rem odio ducimus dignissimos sed!</p>
+
+                                    <h2>Comments (2)</h2>
+                                    <p><span>22/03/2023 </span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <p><span>20/03/2023 </span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                                    <form id="comment-form">
+                                        <fieldset>
+                                            <legend>Add Comment</legend>
+                                            <input type="text" name="name" id="name" placeholder="Your Name" required>
+                                            <textarea name="comment" id="comment" placeholder="Your Comment"></textarea>
+                                            <input type="submit" name="submit" id="submit" value="Submit">
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="program">
+                    <img src="../src/images/movie.jpg" alt="Movie image">
+                    <h2>Mission Impossible</h2>
+                    <div class="like-count">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        5 likes
+                    </div>
+                    <button type="button" id="comment-button">Comment</button>
+                </div>
+                <div class="program">
+                    <img src="../src/images/movie.jpg" alt="Movie image">
+                    <h2>Mission Impossible</h2>
+                    <div class="like-count">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        5 likes
+                    </div>
+                    <button type="button" id="comment-button">Comment</button>
+                </div>
+                <div class="program">
+                    <img src="../src/images/movie.jpg" alt="Movie image">
+                    <h2>Mission Impossible</h2>
+                    <div class="like-count">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        5 likes
+                    </div>
+                    <button type="button" id="comment-button">Comment</button>
+                </div>
+                <div class="program">
+                    <img src="../src/images/movie.jpg" alt="Movie image">
+                    <h2>Mission Impossible</h2>
+                    <div class="like-count">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        5 likes
+                    </div>
+                    <button type="button" id="comment-button">Comment</button>
+                </div>
+                <div class="program">
+                    <img src="../src/images/movie.jpg" alt="Movie image">
+                    <h2>Mission Impossible</h2>
+                    <div class="like-count">
+                        <i class="fa fa-heart-o" aria-hidden="true"></i>
+                        5 likes
+                    </div>
+                    <button type="button" id="comment-button">Comment</button>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         Created by MD Mursedul Islam Sumon & Misikir Delelew &copy; All Rights Reserved
