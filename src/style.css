@@ -81,6 +81,10 @@ header {
   color: var(--heart-red);
 }
 
+.nav-link {
+  display: flex;
+}
+
 .nav-item:hover {
   color: var(--count-hover);
 }
@@ -283,4 +287,27 @@ footer {
   text-decoration: underline;
   font-size: 1.2rem;
   color: #2a4494;
+}
+
+.like-div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5px;
+}
+
+.heart {
+  color: var(--heart-red);
+  font-size: 2rem;
+}
+
+.heart:hover {
+  color: var(--gold);
+}
+
+.like-number:hover {
+  color: var(--heart-red);
+}
+
+.likes-num {
+  color: var(--text-white);
 }

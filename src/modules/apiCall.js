@@ -1,6 +1,10 @@
 import commentPop from './commentPopup';
+import { getData, postData } from './commentAPI';
 
 const address = 'https://api.tvmaze.com/show';
+const APP_ID = 'zX9lc5HNiZeTfJrwouGw';
+
+const INV_LIKE_URL = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${APP_ID}/likes`;
 const getMovies = async () => {
   const list = await fetch(address);
   const movies = await list.json();
@@ -12,7 +16,7 @@ const showMovies = async () => {
   console.log(received);
   const programs = document.getElementById('programs');
   received.forEach((movie) => {
-    if (movie.id < 7) {
+    if (movie.id < 50) {
       const program = document.createElement('div');
       program.className = 'program';
 
@@ -24,17 +28,31 @@ const showMovies = async () => {
       title.innerText = movie.name;
       program.appendChild(title);
 
-      const likeCount = document.createElement('div');
-      likeCount.className = 'like-count';
-      program.appendChild(likeCount);
-
+      const likeDiv = document.createElement('div');
+      likeDiv.className = 'like-div';
+      const likeCount = document.createElement('p');
+      likeCount.className = 'heart';
+      program.appendChild(likeDiv);
+      likeDiv.appendChild(likeCount);
       const likeButton = document.createElement('i');
-      likeButton.className = 'fa fa-heart-o like';
+      likeButton.className = 'fa fa-heart';
       likeCount.appendChild(likeButton);
+      likeButton.addEventListener('click', (e) => {
+        e.target.classList.toggle('active');
 
+        const value = e.target.parentElement.nextSibling.textContent;
+        e.target.parentElement.nextSibling.textContent = parseInt(value, 10) + 1;
+        postData(INV_LIKE_URL, { item_id: movie.id });
+      });
       const likeNumber = document.createElement('p');
-      likeNumber.innerText = '5 likes';
-      likeCount.appendChild(likeNumber);
+      getData(INV_LIKE_URL).then((res) => {
+        const likes = res.filter((item) => item.item_id === movie.id);
+        likeNumber.textContent = likes.length > 0 ? likes[0].likes : 0;
+      });
+
+      likeNumber.className = 'like-number';
+
+      likeDiv.appendChild(likeNumber);
 
       const commentButton = document.createElement('button');
       commentButton.id = `comment-button-${movie.id}`;

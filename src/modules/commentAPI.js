@@ -4,6 +4,16 @@ const APP_ID = 'zX9lc5HNiZeTfJrwouGw';
 
 const INV_COMMENT_URL = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${APP_ID}/comments`;
 
+export const getData = (url) => fetch(url).then((res) => res.json());
+
+export const postData = (url, data) => fetch(url, {
+  method: 'POST',
+  headers: {
+    'Content-type': 'application/json; charset=UTF-8',
+  },
+  body: JSON.stringify(data),
+});
+
 const postComment = async (url, comment) => {
   try {
     const result = await axios.post(url, comment);
