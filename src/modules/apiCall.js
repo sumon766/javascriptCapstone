@@ -1,5 +1,6 @@
 import commentPop from './commentPopup';
-import { getData, postData } from "../modules/commentAPI"
+import { getData, postData } from './commentAPI';
+
 const address = 'https://api.tvmaze.com/show';
 const APP_ID = 'zX9lc5HNiZeTfJrwouGw';
 
@@ -27,12 +28,12 @@ const showMovies = async () => {
       title.innerText = movie.name;
       program.appendChild(title);
 
-      const likeDiv = document.createElement('div')
-      likeDiv.className = "like-div"
+      const likeDiv = document.createElement('div');
+      likeDiv.className = 'like-div';
       const likeCount = document.createElement('p');
       likeCount.className = 'heart';
       program.appendChild(likeDiv);
-      likeDiv.appendChild(likeCount)
+      likeDiv.appendChild(likeCount);
       const likeButton = document.createElement('i');
       likeButton.className = 'fa fa-heart';
       likeCount.appendChild(likeButton);
@@ -49,7 +50,7 @@ const showMovies = async () => {
         likeNumber.textContent = likes.length > 0 ? likes[0].likes : 0;
       });
 
-      likeNumber.className = "like-number"
+      likeNumber.className = 'like-number';
 
       likeDiv.appendChild(likeNumber);
 

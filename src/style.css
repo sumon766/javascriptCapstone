@@ -300,14 +300,12 @@ footer {
   font-size: 2rem;
 }
 
-
 .heart:hover {
   color: var(--gold);
 }
 
 .like-number:hover {
   color: var(--heart-red);
-
 }
 
 .likes-num {
