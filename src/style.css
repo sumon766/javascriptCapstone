@@ -81,6 +81,10 @@ header {
   color: var(--heart-red);
 }
 
+.nav-link {
+  display: flex;
+}
+
 .nav-item:hover {
   color: var(--count-hover);
 }
