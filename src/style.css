@@ -17,6 +17,7 @@ html {
   --gold: #dbae25;
   --heart-red: rgb(223, 2, 2);
   --count-hover: rgb(179, 4, 4);
+  --green: #316d01ea;
 }
 
 * {
@@ -269,13 +270,6 @@ footer {
   color: var(--text-white);
 }
 
-/** */
-
-/* .comment-list {
-  padding: 1rem 0.5rem;
-  border: 1px solid #2a4494;
-} */
-
 .comment-container {
   border: 1px solid #2a4494;
   padding: 1rem 0.5rem;
@@ -296,12 +290,13 @@ footer {
 }
 
 .heart {
-  color: var(--heart-red);
+  color: var(--green);
   font-size: 2rem;
+  cursor: pointer;
 }
 
-.heart:hover {
-  color: var(--gold);
+.heart:hover, .active {
+  color: var(--heart-red);
 }
 
 .like-number:hover {

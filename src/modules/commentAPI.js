@@ -39,7 +39,6 @@ export const addComment = async (movieId, userName, message) => {
 export const getComments = async (movieId) => {
   try {
     const result = await axios.get(`${INV_COMMENT_URL}?item_id=${movieId}`);
-    console.log(result, 'hjghdjhg 0000 11111');
     return result.data;
   } catch (error) {
     throw new Error("Something went wrong, Can't fetch comments!!");

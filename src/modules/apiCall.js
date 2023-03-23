@@ -13,10 +13,9 @@ const getMovies = async () => {
 
 const showMovies = async () => {
   const received = await getMovies();
-  console.log(received);
   const programs = document.getElementById('programs');
   received.forEach((movie) => {
-    if (movie.id < 50) {
+    if (movie.id < 51) {
       const program = document.createElement('div');
       program.className = 'program';
 
@@ -37,12 +36,16 @@ const showMovies = async () => {
       const likeButton = document.createElement('i');
       likeButton.className = 'fa fa-heart';
       likeCount.appendChild(likeButton);
+      let hasClick = false;
       likeButton.addEventListener('click', (e) => {
-        e.target.classList.toggle('active');
+        if(!hasClick){
+          e.target.classList.toggle('active');
 
-        const value = e.target.parentElement.nextSibling.textContent;
-        e.target.parentElement.nextSibling.textContent = parseInt(value, 10) + 1;
-        postData(INV_LIKE_URL, { item_id: movie.id });
+          const value = e.target.parentElement.nextSibling.textContent;
+          e.target.parentElement.nextSibling.textContent = parseInt(value, 10) + 1;
+          postData(INV_LIKE_URL, { item_id: movie.id });
+          hasClick = true;
+        }  
       });
       const likeNumber = document.createElement('p');
       getData(INV_LIKE_URL).then((res) => {
