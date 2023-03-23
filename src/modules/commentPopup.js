@@ -1,4 +1,4 @@
-import { addComment, getComments } from './commentAPI';
+import { addComment, getComments } from './commentAPI.js';
 
 const commentPop = (movie, program) => {
   const moviesModal = document.createElement('div');
