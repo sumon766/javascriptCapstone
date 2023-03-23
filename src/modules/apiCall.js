@@ -15,7 +15,7 @@ const showMovies = async () => {
   console.log(received);
   const programs = document.getElementById('programs');
   received.forEach((movie) => {
-    if (movie.id < 7) {
+    if (movie.id < 50) {
       const program = document.createElement('div');
       program.className = 'program';
 
@@ -34,7 +34,7 @@ const showMovies = async () => {
       program.appendChild(likeDiv);
       likeDiv.appendChild(likeCount)
       const likeButton = document.createElement('i');
-      likeButton.classList.add('fa', 'fa-heart');
+      likeButton.className = 'fa fa-heart';
       likeCount.appendChild(likeButton);
       likeButton.addEventListener('click', (e) => {
         e.target.classList.toggle('active');
