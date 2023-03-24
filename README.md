@@ -26,9 +26,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Javascript Capstone <a name="about-project"></a>
+# 📖 Best TV Programs <a name="about-project"></a>
 
-**Javscript Capstone** is a project to test javascript knowledge that we learnt in the module 2 and this project is going to have webpack, jest, kanbar board project and many more things.
+**Best TV Programs** is a project to test javascript knowledge that we learnt in the module 2 and this project is going to have webpack, jest, kanban board project and many more things.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -56,9 +56,12 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **Kanban Boards**
-- **Javascript DOM Manipulation**
-- **Test functions using Jest**
+- **List of Movies with poster**
+- **Love button for movies**
+- **List of comments on movies**
+- **Movie's storyline and cast details**
+- **Number of likes**
+- **Number of comments**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -138,8 +141,6 @@ Example command:
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
-
 👤 **MD Mursedul Islam Sumon**
 
 - GitHub: [@githubhandle](https://github.com/sumon766)
@@ -149,8 +150,8 @@ Example command:
 👤 **Misikir Delelew**
 
 - GitHub: [@githubhandle](https://github.com/Misikirdelelew)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- Twitter: [@twitterhandle](https://twitter.com/Misikirdelelew)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/Misikirdelelew)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -158,11 +159,9 @@ Example command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **Movies list**
-- [ ] **Like, Comment & Reservation buttons**
-- [ ] **View details post and make comments**
+- [ ] **Pagination**
+- [ ] **More list of movies with box office details**
+- [ ] **Watch trailer and download option**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,7 +179,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project you can buy us a coffee
+If you like this project you can buy us a coffee or make your donation through paypal/payoneer to help us continue our operation and provide you the best possible service through this website.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -188,7 +187,7 @@ If you like this project you can buy us a coffee
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my partner (Misikir Delelew) to help me immensely to complete this project and without his help this could not be completed. Thanks to him.
+I would like to thank my partner (Misikir Delelew) to help me immensely to complete this project and without his help this could not be completed. I am really grateful to him.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
