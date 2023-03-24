@@ -70,19 +70,12 @@ const showMovies = async () => {
       commentIcon.className = 'fa fa-comment';
       commentCount.appendChild(commentIcon);
 
-      // getComments(movie.id).then((data) => {
-      //   const commentNumber = document.createElement('p');
-      //   commentNumber.className = 'comment-number';
-      //   commentNumber.textContent = data.length > 0 ? data.length : 0;
-      //   comments.appendChild(commentNumber);
-      // });
-      const commentNumber = document.createElement('p');
-      commentNumber.className = 'comment-number';
-      // window.addEventListener('load', () => {
-      //   var commentItems = document.getElementsByClassName('comment-container');
-      //   var numCommentItems = commentItems.length;
-      //   commentNumber.textContent = numCommentItems;
-      // });
+      getComments(movie.id).then((data) => {
+        const commentNumber = document.createElement('p');
+        commentNumber.className = 'comment-number';
+        commentNumber.textContent = data.length > 0 ? data.length : 0;
+        comments.appendChild(commentNumber);
+      });
 
       const commentButton = document.createElement('button');
       commentButton.id = `comment-button-${movie.id}`;
@@ -91,14 +84,6 @@ const showMovies = async () => {
       program.appendChild(commentButton);
 
       commentPop(movie, program);
-
-      window.onload = () => {
-        var commentItems = document.getElementsByClassName('comment-container');
-        var numCommentItems = commentItems.length;
-        commentNumber.textContent = numCommentItems;
-        // comments.appendChild(commentNumber);
-      };
-      comments.appendChild(commentNumber);
 
       programs.appendChild(program);
 
