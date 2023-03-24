@@ -70,6 +70,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - [Live Demo Link](https://sumon766.github.io/javascriptCapstone/dist/)
+- [Project video Link](https://drive.google.com/file/d/1OSNiO4xHseJf31U3ycWXqUggH9mOVkS7/view?usp=share_link)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
