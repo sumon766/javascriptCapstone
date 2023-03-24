@@ -1,5 +1,5 @@
-import { getComments } from "./src/modules/commentAPI";
+import { getComments } from './src/modules/commentAPI.js';
 
 test('Test of comment count function', () => {
-    expect(getComments(2)).toBeDefined();
+  expect(getComments(2)).toBeDefined();
 });
