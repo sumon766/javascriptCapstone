@@ -17,7 +17,6 @@ export const postData = (url, data) => fetch(url, {
 const postComment = async (url, comment) => {
   try {
     const result = await axios.post(url, comment);
-    console.log(result, 'jkdjgkgj 000');
     return result;
   } catch (error) {
     throw new Error('Something went wrong, comment not created');
@@ -29,7 +28,6 @@ export const addComment = async (movieId, userName, message) => {
     const comment = { item_id: movieId, username: userName, comment: message };
 
     const result = await postComment(INV_COMMENT_URL, comment);
-    console.log(result, 1122);
     return result;
   } catch (error) {
     throw new Error('Something went wrong, comment not created');

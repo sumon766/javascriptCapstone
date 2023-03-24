@@ -1,4 +1,4 @@
-import { getData } from './commentAPI';
+import { getData } from './commentAPI.js';
 
 const address = 'https://api.tvmaze.com/show';
 const movieCounter = () => {

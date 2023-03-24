@@ -1,4 +1,4 @@
-import { addComment, getComments } from './commentAPI';
+import { addComment, getComments } from './commentAPI.js';
 
 const commentPop = (movie, program) => {
   const moviesModal = document.createElement('div');
@@ -67,7 +67,7 @@ const commentPop = (movie, program) => {
 
   // Manual Comments Here
 
-  // Comment Form Starts Here
+  // Comment Form Here
   const form = document.createElement('form');
   form.id = 'comment-form';
   modalDescription.appendChild(form);
@@ -111,7 +111,7 @@ const commentPop = (movie, program) => {
     commentText.value = '';
   });
 
-  // Comment Form Starts Here
+  // Comment Form Here
 };
 
 export default commentPop;

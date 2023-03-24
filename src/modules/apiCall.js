@@ -1,5 +1,5 @@
-import commentPop from './commentPopup';
-import { getData, postData } from './commentAPI';
+import commentPop from './commentPopup.js';
+import { getData, postData, getComments } from './commentAPI.js';
 
 const address = 'https://api.tvmaze.com/show';
 const APP_ID = 'zX9lc5HNiZeTfJrwouGw';
@@ -29,23 +29,26 @@ const showMovies = async () => {
 
       const likeDiv = document.createElement('div');
       likeDiv.className = 'like-div';
+      program.appendChild(likeDiv);
+      const likes = document.createElement('div');
+      likes.className = 'likes';
+      likeDiv.appendChild(likes);
       const likeCount = document.createElement('p');
       likeCount.className = 'heart';
-      program.appendChild(likeDiv);
-      likeDiv.appendChild(likeCount);
+      likes.appendChild(likeCount);
       const likeButton = document.createElement('i');
       likeButton.className = 'fa fa-heart';
       likeCount.appendChild(likeButton);
       let hasClick = false;
       likeButton.addEventListener('click', (e) => {
-        if(!hasClick){
+        if (!hasClick) {
           e.target.classList.toggle('active');
 
           const value = e.target.parentElement.nextSibling.textContent;
           e.target.parentElement.nextSibling.textContent = parseInt(value, 10) + 1;
           postData(INV_LIKE_URL, { item_id: movie.id });
           hasClick = true;
-        }  
+        }
       });
       const likeNumber = document.createElement('p');
       getData(INV_LIKE_URL).then((res) => {
@@ -55,7 +58,24 @@ const showMovies = async () => {
 
       likeNumber.className = 'like-number';
 
-      likeDiv.appendChild(likeNumber);
+      likes.appendChild(likeNumber);
+
+      const comments = document.createElement('div');
+      comments.className = 'comments';
+      likeDiv.appendChild(comments);
+      const commentCount = document.createElement('p');
+      commentCount.className = 'comment-count';
+      comments.appendChild(commentCount);
+      const commentIcon = document.createElement('i');
+      commentIcon.className = 'fa fa-comment';
+      commentCount.appendChild(commentIcon);
+
+      getComments(movie.id).then((data) => {
+        const commentNumber = document.createElement('p');
+        commentNumber.className = 'comment-number';
+        commentNumber.textContent = data.length > 0 ? data.length : 0;
+        comments.appendChild(commentNumber);
+      });
 
       const commentButton = document.createElement('button');
       commentButton.id = `comment-button-${movie.id}`;
@@ -71,15 +91,15 @@ const showMovies = async () => {
       const btn = document.getElementById(`comment-button-${movie.id}`);
       const span = document.getElementsByClassName(`close${movie.id}`)[0];
 
-      btn.onclick = function () {
+      btn.onclick = () => {
         modal.style.display = 'block';
       };
 
-      span.onclick = function () {
+      span.onclick = () => {
         modal.style.display = 'none';
       };
 
-      window.onclick = function (event) {
+      window.onclick = (event) => {
         if (event.target === modal) {
           modal.style.display = 'none';
         }

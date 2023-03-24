@@ -152,7 +152,7 @@ header {
   display: none;
   position: fixed;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 55px;
   left: 0;
   top: 0;
   width: 100%;
@@ -289,14 +289,25 @@ footer {
   padding: 10px 5px;
 }
 
+.likes {
+  display: flex;
+  width: 17%;
+  justify-content: space-between;
+}
+
 .heart {
   color: var(--green);
   font-size: 2rem;
   cursor: pointer;
 }
 
-.heart:hover, .active {
+.heart:hover,
+.active {
   color: var(--heart-red);
+}
+
+.like-number {
+  margin-top: 2px;
 }
 
 .like-number:hover {
@@ -305,4 +316,14 @@ footer {
 
 .likes-num {
   color: var(--text-white);
+}
+
+.comments {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment-count {
+  color: var(--green);
 }

@@ -22,7 +22,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* Fonts */\r\n\r\n/* 1rem = 10px */\r\nhtml {\r\n  font-size: 62.5%;\r\n}\r\n\r\n/* Color palette */\r\n:root {\r\n  --dark-blue: #122c34;\r\n  --mild-blue: #224870;\r\n  --blue-blue: #2a4494;\r\n  --light-blue: #4ea5d9;\r\n  --water-blue: #44cfcb;\r\n  --text-white: #fff;\r\n  --gold: #dbae25;\r\n  --heart-red: rgb(223, 2, 2);\r\n  --count-hover: rgb(179, 4, 4);\r\n  --green: #316d01ea;\r\n}\r\n\r\n* {\r\n  padding: 0;\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  font-family: 'Poppins', sans-serif;\r\n  font-size: 1.6rem;\r\n}\r\n\r\n/* Header */\r\nheader {\r\n  padding: 2rem 0;\r\n  background-color: var(--dark-blue);\r\n  border-bottom: var(--light-blue);\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-around;\r\n}\r\n\r\n.logo {\r\n  font-size: 2.5rem;\r\n  font-weight: 600;\r\n  text-decoration: none;\r\n  text-transform: capitalize;\r\n  color: var(--gold);\r\n}\r\n\r\n.logo:hover {\r\n  text-decoration: underline;\r\n}\r\n\r\n.nav {\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-around;\r\n  column-gap: 1rem;\r\n  margin-left: 1rem;\r\n}\r\n\r\n.nav ul {\r\n  display: flex;\r\n  list-style: none;\r\n  justify-content: space-between;\r\n  column-gap: 1rem;\r\n}\r\n\r\n.nav-item a {\r\n  font-size: 1.9rem;\r\n  color: var(--text-white);\r\n  text-decoration: none;\r\n}\r\n\r\n.nav-item a:hover {\r\n  color: var(--gold);\r\n}\r\n\r\n.nav-item {\r\n  color: var(--heart-red);\r\n}\r\n\r\n.nav-link {\r\n  display: flex;\r\n}\r\n\r\n.nav-item:hover {\r\n  color: var(--count-hover);\r\n}\r\n\r\n#search {\r\n  padding: 0.7rem;\r\n  border-radius: 0.5rem;\r\n  border: 0;\r\n}\r\n\r\n#tv-container {\r\n  width: 75%;\r\n  margin: 0 auto;\r\n}\r\n\r\n#programs {\r\n  display: grid;\r\n  grid-template-columns: auto auto auto;\r\n  column-gap: 8%;\r\n  margin: 60px 0;\r\n}\r\n\r\n.program {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin-bottom: 35px;\r\n}\r\n\r\n.program img {\r\n  width: 100%;\r\n  height: 350px;\r\n  margin-bottom: 15px;\r\n}\r\n\r\n.program h2 {\r\n  font-size: 18px;\r\n  font-family: 'Inter', sans-serif;\r\n  font-weight: 700;\r\n  color: #122c34;\r\n}\r\n\r\n.like-count {\r\n  margin: 12px 0;\r\n}\r\n\r\n.like {\r\n  float: left;\r\n  margin-top: 5px;\r\n  margin-right: 10px;\r\n}\r\n\r\n.program button {\r\n  border: none;\r\n  background-color: #2a4494;\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  font-weight: normal;\r\n  color: #fff;\r\n  cursor: pointer;\r\n  padding: 10px 0;\r\n}\r\n\r\n.modal {\r\n  display: none;\r\n  position: fixed;\r\n  z-index: 1;\r\n  padding-top: 100px;\r\n  left: 0;\r\n  top: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  overflow: auto;\r\n  background-color: rgb(0, 0, 0);\r\n  background-color: rgba(0, 0, 0, 0.4);\r\n}\r\n\r\n.modal-content {\r\n  background-color: #fefefe;\r\n  margin: auto;\r\n  padding: 20px;\r\n  border: 1px solid #888;\r\n  width: 80%;\r\n  display: flex;\r\n  flex-direction: column;\r\n  position: relative;\r\n}\r\n\r\n#close {\r\n  color: #aaa;\r\n  float: right;\r\n  font-size: 50px;\r\n  font-weight: bold;\r\n  position: absolute;\r\n  right: 20px;\r\n}\r\n\r\n#close:hover,\r\n#close:focus {\r\n  color: #000;\r\n  text-decoration: none;\r\n  cursor: pointer;\r\n}\r\n\r\n.modal-image-title {\r\n  display: flex;\r\n}\r\n\r\n.modal-image-title img {\r\n  width: auto;\r\n  height: 450px;\r\n}\r\n\r\n.modal-description {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin: 0 50px;\r\n}\r\n\r\n.modal-description h2 {\r\n  font-size: 25px;\r\n  font-family: 'Poppins', sans-serif;\r\n  font-weight: 700;\r\n  color: #122c34;\r\n}\r\n\r\n.modal-description p {\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  color: #1f2e33;\r\n  margin: 10px 0;\r\n}\r\n\r\n.modal-description p span {\r\n  font-family: 'Inter', sans-serif;\r\n  font-size: 18px;\r\n  font-weight: 700;\r\n}\r\n\r\n#comment-form {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\nfieldset {\r\n  padding: 15px 20px;\r\n}\r\n\r\ninput {\r\n  padding: 15px;\r\n  width: 100%;\r\n  border: 1px solid #2a4494;\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  border-radius: 5px;\r\n}\r\n\r\ntextarea {\r\n  padding: 10px;\r\n  width: 100%;\r\n  border: 1px solid #2a4494;\r\n  margin: 15px 0;\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  height: 100px;\r\n  border-radius: 5px;\r\n}\r\n\r\ninput[type=submit] {\r\n  width: fit-content;\r\n  background-color: #2a4494;\r\n  color: #fff;\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  border-radius: 3px;\r\n}\r\n\r\n/* Footer */\r\nfooter {\r\n  text-align: center;\r\n  padding: 2rem 0;\r\n  background-color: var(--dark-blue);\r\n  color: var(--text-white);\r\n}\r\n\r\n.comment-container {\r\n  border: 1px solid #2a4494;\r\n  padding: 1rem 0.5rem;\r\n  margin: 1rem 0;\r\n  border-radius: 5px;\r\n}\r\n\r\n.commentor-name {\r\n  text-decoration: underline;\r\n  font-size: 1.2rem;\r\n  color: #2a4494;\r\n}\r\n\r\n.like-div {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  padding: 10px 5px;\r\n}\r\n\r\n.heart {\r\n  color: var(--green);\r\n  font-size: 2rem;\r\n  cursor: pointer;\r\n}\r\n\r\n.heart:hover, .active {\r\n  color: var(--heart-red);\r\n}\r\n\r\n.like-number:hover {\r\n  color: var(--heart-red);\r\n}\r\n\r\n.likes-num {\r\n  color: var(--text-white);\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"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","sourcesContent":["/* Fonts */\r\n@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap');\r\n\r\n/* 1rem = 10px */\r\nhtml {\r\n  font-size: 62.5%;\r\n}\r\n\r\n/* Color palette */\r\n:root {\r\n  --dark-blue: #122c34;\r\n  --mild-blue: #224870;\r\n  --blue-blue: #2a4494;\r\n  --light-blue: #4ea5d9;\r\n  --water-blue: #44cfcb;\r\n  --text-white: #fff;\r\n  --gold: #dbae25;\r\n  --heart-red: rgb(223, 2, 2);\r\n  --count-hover: rgb(179, 4, 4);\r\n  --green: #316d01ea;\r\n}\r\n\r\n* {\r\n  padding: 0;\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  font-family: 'Poppins', sans-serif;\r\n  font-size: 1.6rem;\r\n}\r\n\r\n/* Header */\r\nheader {\r\n  padding: 2rem 0;\r\n  background-color: var(--dark-blue);\r\n  border-bottom: var(--light-blue);\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-around;\r\n}\r\n\r\n.logo {\r\n  font-size: 2.5rem;\r\n  font-weight: 600;\r\n  text-decoration: none;\r\n  text-transform: capitalize;\r\n  color: var(--gold);\r\n}\r\n\r\n.logo:hover {\r\n  text-decoration: underline;\r\n}\r\n\r\n.nav {\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-around;\r\n  column-gap: 1rem;\r\n  margin-left: 1rem;\r\n}\r\n\r\n.nav ul {\r\n  display: flex;\r\n  list-style: none;\r\n  justify-content: space-between;\r\n  column-gap: 1rem;\r\n}\r\n\r\n.nav-item a {\r\n  font-size: 1.9rem;\r\n  color: var(--text-white);\r\n  text-decoration: none;\r\n}\r\n\r\n.nav-item a:hover {\r\n  color: var(--gold);\r\n}\r\n\r\n.nav-item {\r\n  color: var(--heart-red);\r\n}\r\n\r\n.nav-link {\r\n  display: flex;\r\n}\r\n\r\n.nav-item:hover {\r\n  color: var(--count-hover);\r\n}\r\n\r\n#search {\r\n  padding: 0.7rem;\r\n  border-radius: 0.5rem;\r\n  border: 0;\r\n}\r\n\r\n#tv-container {\r\n  width: 75%;\r\n  margin: 0 auto;\r\n}\r\n\r\n#programs {\r\n  display: grid;\r\n  grid-template-columns: auto auto auto;\r\n  column-gap: 8%;\r\n  margin: 60px 0;\r\n}\r\n\r\n.program {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin-bottom: 35px;\r\n}\r\n\r\n.program img {\r\n  width: 100%;\r\n  height: 350px;\r\n  margin-bottom: 15px;\r\n}\r\n\r\n.program h2 {\r\n  font-size: 18px;\r\n  font-family: 'Inter', sans-serif;\r\n  font-weight: 700;\r\n  color: #122c34;\r\n}\r\n\r\n.like-count {\r\n  margin: 12px 0;\r\n}\r\n\r\n.like {\r\n  float: left;\r\n  margin-top: 5px;\r\n  margin-right: 10px;\r\n}\r\n\r\n.program button {\r\n  border: none;\r\n  background-color: #2a4494;\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  font-weight: normal;\r\n  color: #fff;\r\n  cursor: pointer;\r\n  padding: 10px 0;\r\n}\r\n\r\n.modal {\r\n  display: none;\r\n  position: fixed;\r\n  z-index: 1;\r\n  padding-top: 100px;\r\n  left: 0;\r\n  top: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  overflow: auto;\r\n  background-color: rgb(0, 0, 0);\r\n  background-color: rgba(0, 0, 0, 0.4);\r\n}\r\n\r\n.modal-content {\r\n  background-color: #fefefe;\r\n  margin: auto;\r\n  padding: 20px;\r\n  border: 1px solid #888;\r\n  width: 80%;\r\n  display: flex;\r\n  flex-direction: column;\r\n  position: relative;\r\n}\r\n\r\n#close {\r\n  color: #aaa;\r\n  float: right;\r\n  font-size: 50px;\r\n  font-weight: bold;\r\n  position: absolute;\r\n  right: 20px;\r\n}\r\n\r\n#close:hover,\r\n#close:focus {\r\n  color: #000;\r\n  text-decoration: none;\r\n  cursor: pointer;\r\n}\r\n\r\n.modal-image-title {\r\n  display: flex;\r\n}\r\n\r\n.modal-image-title img {\r\n  width: auto;\r\n  height: 450px;\r\n}\r\n\r\n.modal-description {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin: 0 50px;\r\n}\r\n\r\n.modal-description h2 {\r\n  font-size: 25px;\r\n  font-family: 'Poppins', sans-serif;\r\n  font-weight: 700;\r\n  color: #122c34;\r\n}\r\n\r\n.modal-description p {\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  color: #1f2e33;\r\n  margin: 10px 0;\r\n}\r\n\r\n.modal-description p span {\r\n  font-family: 'Inter', sans-serif;\r\n  font-size: 18px;\r\n  font-weight: 700;\r\n}\r\n\r\n#comment-form {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\nfieldset {\r\n  padding: 15px 20px;\r\n}\r\n\r\ninput {\r\n  padding: 15px;\r\n  width: 100%;\r\n  border: 1px solid #2a4494;\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  border-radius: 5px;\r\n}\r\n\r\ntextarea {\r\n  padding: 10px;\r\n  width: 100%;\r\n  border: 1px solid #2a4494;\r\n  margin: 15px 0;\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  height: 100px;\r\n  border-radius: 5px;\r\n}\r\n\r\ninput[type=submit] {\r\n  width: fit-content;\r\n  background-color: #2a4494;\r\n  color: #fff;\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  border-radius: 3px;\r\n}\r\n\r\n/* Footer */\r\nfooter {\r\n  text-align: center;\r\n  padding: 2rem 0;\r\n  background-color: var(--dark-blue);\r\n  color: var(--text-white);\r\n}\r\n\r\n.comment-container {\r\n  border: 1px solid #2a4494;\r\n  padding: 1rem 0.5rem;\r\n  margin: 1rem 0;\r\n  border-radius: 5px;\r\n}\r\n\r\n.commentor-name {\r\n  text-decoration: underline;\r\n  font-size: 1.2rem;\r\n  color: #2a4494;\r\n}\r\n\r\n.like-div {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  padding: 10px 5px;\r\n}\r\n\r\n.heart {\r\n  color: var(--green);\r\n  font-size: 2rem;\r\n  cursor: pointer;\r\n}\r\n\r\n.heart:hover, .active {\r\n  color: var(--heart-red);\r\n}\r\n\r\n.like-number:hover {\r\n  color: var(--heart-red);\r\n}\r\n\r\n.likes-num {\r\n  color: var(--text-white);\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* Fonts */\r\n\r\n/* 1rem = 10px */\r\nhtml {\r\n  font-size: 62.5%;\r\n}\r\n\r\n/* Color palette */\r\n:root {\r\n  --dark-blue: #122c34;\r\n  --mild-blue: #224870;\r\n  --blue-blue: #2a4494;\r\n  --light-blue: #4ea5d9;\r\n  --water-blue: #44cfcb;\r\n  --text-white: #fff;\r\n  --gold: #dbae25;\r\n  --heart-red: rgb(223, 2, 2);\r\n  --count-hover: rgb(179, 4, 4);\r\n  --green: #316d01ea;\r\n}\r\n\r\n* {\r\n  padding: 0;\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  font-family: 'Poppins', sans-serif;\r\n  font-size: 1.6rem;\r\n}\r\n\r\n/* Header */\r\nheader {\r\n  padding: 2rem 0;\r\n  background-color: var(--dark-blue);\r\n  border-bottom: var(--light-blue);\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-around;\r\n}\r\n\r\n.logo {\r\n  font-size: 2.5rem;\r\n  font-weight: 600;\r\n  text-decoration: none;\r\n  text-transform: capitalize;\r\n  color: var(--gold);\r\n}\r\n\r\n.logo:hover {\r\n  text-decoration: underline;\r\n}\r\n\r\n.nav {\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-around;\r\n  column-gap: 1rem;\r\n  margin-left: 1rem;\r\n}\r\n\r\n.nav ul {\r\n  display: flex;\r\n  list-style: none;\r\n  justify-content: space-between;\r\n  column-gap: 1rem;\r\n}\r\n\r\n.nav-item a {\r\n  font-size: 1.9rem;\r\n  color: var(--text-white);\r\n  text-decoration: none;\r\n}\r\n\r\n.nav-item a:hover {\r\n  color: var(--gold);\r\n}\r\n\r\n.nav-item {\r\n  color: var(--heart-red);\r\n}\r\n\r\n.nav-link {\r\n  display: flex;\r\n}\r\n\r\n.nav-item:hover {\r\n  color: var(--count-hover);\r\n}\r\n\r\n#search {\r\n  padding: 0.7rem;\r\n  border-radius: 0.5rem;\r\n  border: 0;\r\n}\r\n\r\n#tv-container {\r\n  width: 75%;\r\n  margin: 0 auto;\r\n}\r\n\r\n#programs {\r\n  display: grid;\r\n  grid-template-columns: auto auto auto;\r\n  column-gap: 8%;\r\n  margin: 60px 0;\r\n}\r\n\r\n.program {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin-bottom: 35px;\r\n}\r\n\r\n.program img {\r\n  width: 100%;\r\n  height: 350px;\r\n  margin-bottom: 15px;\r\n}\r\n\r\n.program h2 {\r\n  font-size: 18px;\r\n  font-family: 'Inter', sans-serif;\r\n  font-weight: 700;\r\n  color: #122c34;\r\n}\r\n\r\n.like-count {\r\n  margin: 12px 0;\r\n}\r\n\r\n.like {\r\n  float: left;\r\n  margin-top: 5px;\r\n  margin-right: 10px;\r\n}\r\n\r\n.program button {\r\n  border: none;\r\n  background-color: #2a4494;\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  font-weight: normal;\r\n  color: #fff;\r\n  cursor: pointer;\r\n  padding: 10px 0;\r\n}\r\n\r\n.modal {\r\n  display: none;\r\n  position: fixed;\r\n  z-index: 1;\r\n  padding-top: 55px;\r\n  left: 0;\r\n  top: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  overflow: auto;\r\n  background-color: rgb(0, 0, 0);\r\n  background-color: rgba(0, 0, 0, 0.4);\r\n}\r\n\r\n.modal-content {\r\n  background-color: #fefefe;\r\n  margin: auto;\r\n  padding: 20px;\r\n  border: 1px solid #888;\r\n  width: 80%;\r\n  display: flex;\r\n  flex-direction: column;\r\n  position: relative;\r\n}\r\n\r\n#close {\r\n  color: #aaa;\r\n  float: right;\r\n  font-size: 50px;\r\n  font-weight: bold;\r\n  position: absolute;\r\n  right: 20px;\r\n}\r\n\r\n#close:hover,\r\n#close:focus {\r\n  color: #000;\r\n  text-decoration: none;\r\n  cursor: pointer;\r\n}\r\n\r\n.modal-image-title {\r\n  display: flex;\r\n}\r\n\r\n.modal-image-title img {\r\n  width: auto;\r\n  height: 450px;\r\n}\r\n\r\n.modal-description {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin: 0 50px;\r\n}\r\n\r\n.modal-description h2 {\r\n  font-size: 25px;\r\n  font-family: 'Poppins', sans-serif;\r\n  font-weight: 700;\r\n  color: #122c34;\r\n}\r\n\r\n.modal-description p {\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  color: #1f2e33;\r\n  margin: 10px 0;\r\n}\r\n\r\n.modal-description p span {\r\n  font-family: 'Inter', sans-serif;\r\n  font-size: 18px;\r\n  font-weight: 700;\r\n}\r\n\r\n#comment-form {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\nfieldset {\r\n  padding: 15px 20px;\r\n}\r\n\r\ninput {\r\n  padding: 15px;\r\n  width: 100%;\r\n  border: 1px solid #2a4494;\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  border-radius: 5px;\r\n}\r\n\r\ntextarea {\r\n  padding: 10px;\r\n  width: 100%;\r\n  border: 1px solid #2a4494;\r\n  margin: 15px 0;\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  height: 100px;\r\n  border-radius: 5px;\r\n}\r\n\r\ninput[type=submit] {\r\n  width: fit-content;\r\n  background-color: #2a4494;\r\n  color: #fff;\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  border-radius: 3px;\r\n}\r\n\r\n/* Footer */\r\nfooter {\r\n  text-align: center;\r\n  padding: 2rem 0;\r\n  background-color: var(--dark-blue);\r\n  color: var(--text-white);\r\n}\r\n\r\n.comment-container {\r\n  border: 1px solid #2a4494;\r\n  padding: 1rem 0.5rem;\r\n  margin: 1rem 0;\r\n  border-radius: 5px;\r\n}\r\n\r\n.commentor-name {\r\n  text-decoration: underline;\r\n  font-size: 1.2rem;\r\n  color: #2a4494;\r\n}\r\n\r\n.like-div {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  padding: 10px 5px;\r\n}\r\n\r\n.likes {\r\n  display: flex;\r\n  width: 17%;\r\n  justify-content: space-between;\r\n}\r\n\r\n.heart {\r\n  color: var(--green);\r\n  font-size: 2rem;\r\n  cursor: pointer;\r\n}\r\n\r\n.heart:hover,\r\n.active {\r\n  color: var(--heart-red);\r\n}\r\n\r\n.like-number {\r\n  margin-top: 2px;\r\n}\r\n\r\n.like-number:hover {\r\n  color: var(--heart-red);\r\n}\r\n\r\n.likes-num {\r\n  color: var(--text-white);\r\n}\r\n\r\n.comments {\r\n  width: 15%;\r\n  display: flex;\r\n  justify-content: space-between;\r\n}\r\n\r\n.comment-count {\r\n  color: var(--green);\r\n}\r\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"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","sourcesContent":["/* Fonts */\r\n@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,400&display=swap');\r\n\r\n/* 1rem = 10px */\r\nhtml {\r\n  font-size: 62.5%;\r\n}\r\n\r\n/* Color palette */\r\n:root {\r\n  --dark-blue: #122c34;\r\n  --mild-blue: #224870;\r\n  --blue-blue: #2a4494;\r\n  --light-blue: #4ea5d9;\r\n  --water-blue: #44cfcb;\r\n  --text-white: #fff;\r\n  --gold: #dbae25;\r\n  --heart-red: rgb(223, 2, 2);\r\n  --count-hover: rgb(179, 4, 4);\r\n  --green: #316d01ea;\r\n}\r\n\r\n* {\r\n  padding: 0;\r\n  margin: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nbody {\r\n  font-family: 'Poppins', sans-serif;\r\n  font-size: 1.6rem;\r\n}\r\n\r\n/* Header */\r\nheader {\r\n  padding: 2rem 0;\r\n  background-color: var(--dark-blue);\r\n  border-bottom: var(--light-blue);\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-around;\r\n}\r\n\r\n.logo {\r\n  font-size: 2.5rem;\r\n  font-weight: 600;\r\n  text-decoration: none;\r\n  text-transform: capitalize;\r\n  color: var(--gold);\r\n}\r\n\r\n.logo:hover {\r\n  text-decoration: underline;\r\n}\r\n\r\n.nav {\r\n  display: flex;\r\n  align-items: baseline;\r\n  justify-content: space-around;\r\n  column-gap: 1rem;\r\n  margin-left: 1rem;\r\n}\r\n\r\n.nav ul {\r\n  display: flex;\r\n  list-style: none;\r\n  justify-content: space-between;\r\n  column-gap: 1rem;\r\n}\r\n\r\n.nav-item a {\r\n  font-size: 1.9rem;\r\n  color: var(--text-white);\r\n  text-decoration: none;\r\n}\r\n\r\n.nav-item a:hover {\r\n  color: var(--gold);\r\n}\r\n\r\n.nav-item {\r\n  color: var(--heart-red);\r\n}\r\n\r\n.nav-link {\r\n  display: flex;\r\n}\r\n\r\n.nav-item:hover {\r\n  color: var(--count-hover);\r\n}\r\n\r\n#search {\r\n  padding: 0.7rem;\r\n  border-radius: 0.5rem;\r\n  border: 0;\r\n}\r\n\r\n#tv-container {\r\n  width: 75%;\r\n  margin: 0 auto;\r\n}\r\n\r\n#programs {\r\n  display: grid;\r\n  grid-template-columns: auto auto auto;\r\n  column-gap: 8%;\r\n  margin: 60px 0;\r\n}\r\n\r\n.program {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin-bottom: 35px;\r\n}\r\n\r\n.program img {\r\n  width: 100%;\r\n  height: 350px;\r\n  margin-bottom: 15px;\r\n}\r\n\r\n.program h2 {\r\n  font-size: 18px;\r\n  font-family: 'Inter', sans-serif;\r\n  font-weight: 700;\r\n  color: #122c34;\r\n}\r\n\r\n.like-count {\r\n  margin: 12px 0;\r\n}\r\n\r\n.like {\r\n  float: left;\r\n  margin-top: 5px;\r\n  margin-right: 10px;\r\n}\r\n\r\n.program button {\r\n  border: none;\r\n  background-color: #2a4494;\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  font-weight: normal;\r\n  color: #fff;\r\n  cursor: pointer;\r\n  padding: 10px 0;\r\n}\r\n\r\n.modal {\r\n  display: none;\r\n  position: fixed;\r\n  z-index: 1;\r\n  padding-top: 55px;\r\n  left: 0;\r\n  top: 0;\r\n  width: 100%;\r\n  height: 100%;\r\n  overflow: auto;\r\n  background-color: rgb(0, 0, 0);\r\n  background-color: rgba(0, 0, 0, 0.4);\r\n}\r\n\r\n.modal-content {\r\n  background-color: #fefefe;\r\n  margin: auto;\r\n  padding: 20px;\r\n  border: 1px solid #888;\r\n  width: 80%;\r\n  display: flex;\r\n  flex-direction: column;\r\n  position: relative;\r\n}\r\n\r\n#close {\r\n  color: #aaa;\r\n  float: right;\r\n  font-size: 50px;\r\n  font-weight: bold;\r\n  position: absolute;\r\n  right: 20px;\r\n}\r\n\r\n#close:hover,\r\n#close:focus {\r\n  color: #000;\r\n  text-decoration: none;\r\n  cursor: pointer;\r\n}\r\n\r\n.modal-image-title {\r\n  display: flex;\r\n}\r\n\r\n.modal-image-title img {\r\n  width: auto;\r\n  height: 450px;\r\n}\r\n\r\n.modal-description {\r\n  display: flex;\r\n  flex-direction: column;\r\n  margin: 0 50px;\r\n}\r\n\r\n.modal-description h2 {\r\n  font-size: 25px;\r\n  font-family: 'Poppins', sans-serif;\r\n  font-weight: 700;\r\n  color: #122c34;\r\n}\r\n\r\n.modal-description p {\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  color: #1f2e33;\r\n  margin: 10px 0;\r\n}\r\n\r\n.modal-description p span {\r\n  font-family: 'Inter', sans-serif;\r\n  font-size: 18px;\r\n  font-weight: 700;\r\n}\r\n\r\n#comment-form {\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\nfieldset {\r\n  padding: 15px 20px;\r\n}\r\n\r\ninput {\r\n  padding: 15px;\r\n  width: 100%;\r\n  border: 1px solid #2a4494;\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  border-radius: 5px;\r\n}\r\n\r\ntextarea {\r\n  padding: 10px;\r\n  width: 100%;\r\n  border: 1px solid #2a4494;\r\n  margin: 15px 0;\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  height: 100px;\r\n  border-radius: 5px;\r\n}\r\n\r\ninput[type=submit] {\r\n  width: fit-content;\r\n  background-color: #2a4494;\r\n  color: #fff;\r\n  font-size: 16px;\r\n  font-family: 'Roboto', sans-serif;\r\n  border-radius: 3px;\r\n}\r\n\r\n/* Footer */\r\nfooter {\r\n  text-align: center;\r\n  padding: 2rem 0;\r\n  background-color: var(--dark-blue);\r\n  color: var(--text-white);\r\n}\r\n\r\n.comment-container {\r\n  border: 1px solid #2a4494;\r\n  padding: 1rem 0.5rem;\r\n  margin: 1rem 0;\r\n  border-radius: 5px;\r\n}\r\n\r\n.commentor-name {\r\n  text-decoration: underline;\r\n  font-size: 1.2rem;\r\n  color: #2a4494;\r\n}\r\n\r\n.like-div {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  padding: 10px 5px;\r\n}\r\n\r\n.likes {\r\n  display: flex;\r\n  width: 17%;\r\n  justify-content: space-between;\r\n}\r\n\r\n.heart {\r\n  color: var(--green);\r\n  font-size: 2rem;\r\n  cursor: pointer;\r\n}\r\n\r\n.heart:hover,\r\n.active {\r\n  color: var(--heart-red);\r\n}\r\n\r\n.like-number {\r\n  margin-top: 2px;\r\n}\r\n\r\n.like-number:hover {\r\n  color: var(--heart-red);\r\n}\r\n\r\n.likes-num {\r\n  color: var(--text-white);\r\n}\r\n\r\n.comments {\r\n  width: 15%;\r\n  display: flex;\r\n  justify-content: space-between;\r\n}\r\n\r\n.comment-count {\r\n  color: var(--green);\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -479,8 +479,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _commentPopup__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./commentPopup */ "./src/modules/commentPopup.js");
-/* harmony import */ var _commentAPI__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./commentAPI */ "./src/modules/commentAPI.js");
+/* harmony import */ var _commentPopup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./commentPopup.js */ "./src/modules/commentPopup.js");
+/* harmony import */ var _commentAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./commentAPI.js */ "./src/modules/commentAPI.js");
 
 
 
@@ -512,33 +512,53 @@ const showMovies = async () => {
 
       const likeDiv = document.createElement('div');
       likeDiv.className = 'like-div';
+      program.appendChild(likeDiv);
+      const likes = document.createElement('div');
+      likes.className = 'likes';
+      likeDiv.appendChild(likes);
       const likeCount = document.createElement('p');
       likeCount.className = 'heart';
-      program.appendChild(likeDiv);
-      likeDiv.appendChild(likeCount);
+      likes.appendChild(likeCount);
       const likeButton = document.createElement('i');
       likeButton.className = 'fa fa-heart';
       likeCount.appendChild(likeButton);
       let hasClick = false;
       likeButton.addEventListener('click', (e) => {
-        if(!hasClick){
+        if (!hasClick) {
           e.target.classList.toggle('active');
 
           const value = e.target.parentElement.nextSibling.textContent;
           e.target.parentElement.nextSibling.textContent = parseInt(value, 10) + 1;
-          (0,_commentAPI__WEBPACK_IMPORTED_MODULE_1__.postData)(INV_LIKE_URL, { item_id: movie.id });
+          (0,_commentAPI_js__WEBPACK_IMPORTED_MODULE_1__.postData)(INV_LIKE_URL, { item_id: movie.id });
           hasClick = true;
-        }  
+        }
       });
       const likeNumber = document.createElement('p');
-      (0,_commentAPI__WEBPACK_IMPORTED_MODULE_1__.getData)(INV_LIKE_URL).then((res) => {
+      (0,_commentAPI_js__WEBPACK_IMPORTED_MODULE_1__.getData)(INV_LIKE_URL).then((res) => {
         const likes = res.filter((item) => item.item_id === movie.id);
         likeNumber.textContent = likes.length > 0 ? likes[0].likes : 0;
       });
 
       likeNumber.className = 'like-number';
 
-      likeDiv.appendChild(likeNumber);
+      likes.appendChild(likeNumber);
+
+      const comments = document.createElement('div');
+      comments.className = 'comments';
+      likeDiv.appendChild(comments);
+      const commentCount = document.createElement('p');
+      commentCount.className = 'comment-count';
+      comments.appendChild(commentCount);
+      const commentIcon = document.createElement('i');
+      commentIcon.className = 'fa fa-comment';
+      commentCount.appendChild(commentIcon);
+
+      (0,_commentAPI_js__WEBPACK_IMPORTED_MODULE_1__.getComments)(movie.id).then((data) => {
+        const commentNumber = document.createElement('p');
+        commentNumber.className = 'comment-number';
+        commentNumber.textContent = data.length > 0 ? data.length : 0;
+        comments.appendChild(commentNumber);
+      });
 
       const commentButton = document.createElement('button');
       commentButton.id = `comment-button-${movie.id}`;
@@ -546,7 +566,7 @@ const showMovies = async () => {
       commentButton.innerText = 'Comment';
       program.appendChild(commentButton);
 
-      (0,_commentPopup__WEBPACK_IMPORTED_MODULE_0__["default"])(movie, program);
+      (0,_commentPopup_js__WEBPACK_IMPORTED_MODULE_0__["default"])(movie, program);
 
       programs.appendChild(program);
 
@@ -554,15 +574,15 @@ const showMovies = async () => {
       const btn = document.getElementById(`comment-button-${movie.id}`);
       const span = document.getElementsByClassName(`close${movie.id}`)[0];
 
-      btn.onclick = function () {
+      btn.onclick = () => {
         modal.style.display = 'block';
       };
 
-      span.onclick = function () {
+      span.onclick = () => {
         modal.style.display = 'none';
       };
 
-      window.onclick = function (event) {
+      window.onclick = (event) => {
         if (event.target === modal) {
           modal.style.display = 'none';
         }
@@ -608,7 +628,6 @@ const postData = (url, data) => fetch(url, {
 const postComment = async (url, comment) => {
   try {
     const result = await axios__WEBPACK_IMPORTED_MODULE_0__["default"].post(url, comment);
-    console.log(result, 'jkdjgkgj 000');
     return result;
   } catch (error) {
     throw new Error('Something went wrong, comment not created');
@@ -620,7 +639,6 @@ const addComment = async (movieId, userName, message) => {
     const comment = { item_id: movieId, username: userName, comment: message };
 
     const result = await postComment(INV_COMMENT_URL, comment);
-    console.log(result, 1122);
     return result;
   } catch (error) {
     throw new Error('Something went wrong, comment not created');
@@ -649,7 +667,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _commentAPI__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./commentAPI */ "./src/modules/commentAPI.js");
+/* harmony import */ var _commentAPI_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./commentAPI.js */ "./src/modules/commentAPI.js");
 
 
 const commentPop = (movie, program) => {
@@ -694,7 +712,7 @@ const commentPop = (movie, program) => {
   const comments = document.createElement('h2');
 
   // Manual Comments Here
-  (0,_commentAPI__WEBPACK_IMPORTED_MODULE_0__.getComments)(movie.id).then((data) => {
+  (0,_commentAPI_js__WEBPACK_IMPORTED_MODULE_0__.getComments)(movie.id).then((data) => {
     const count = data.length;
     comments.textContent = `Comments (${count})`;
     commentList.appendChild(comments);
@@ -719,7 +737,7 @@ const commentPop = (movie, program) => {
 
   // Manual Comments Here
 
-  // Comment Form Starts Here
+  // Comment Form Here
   const form = document.createElement('form');
   form.id = 'comment-form';
   modalDescription.appendChild(form);
@@ -757,13 +775,13 @@ const commentPop = (movie, program) => {
   submit.addEventListener('click', async (e) => {
     e.preventDefault();
     if (name.value && commentText.value) {
-      (0,_commentAPI__WEBPACK_IMPORTED_MODULE_0__.addComment)(movie.id, name.value, commentText.value);
+      (0,_commentAPI_js__WEBPACK_IMPORTED_MODULE_0__.addComment)(movie.id, name.value, commentText.value);
     }
     name.value = '';
     commentText.value = '';
   });
 
-  // Comment Form Starts Here
+  // Comment Form Here
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (commentPop);
@@ -780,13 +798,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _commentAPI__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./commentAPI */ "./src/modules/commentAPI.js");
+/* harmony import */ var _commentAPI_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./commentAPI.js */ "./src/modules/commentAPI.js");
 
 
 const address = 'https://api.tvmaze.com/show';
 const movieCounter = () => {
   const counterSpan = document.getElementById('movie-count');
-  (0,_commentAPI__WEBPACK_IMPORTED_MODULE_0__.getData)(address).then((res) => {
+  (0,_commentAPI_js__WEBPACK_IMPORTED_MODULE_0__.getData)(address).then((res) => {
     counterSpan.textContent = `(${res.length})`;
   });
 };
@@ -4936,17 +4954,17 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
 /* harmony import */ var _images_movie_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/movie.jpg */ "./src/images/movie.jpg");
-/* harmony import */ var _modules_apiCall__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/apiCall */ "./src/modules/apiCall.js");
-/* harmony import */ var _modules_movieCounter__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/movieCounter */ "./src/modules/movieCounter.js");
+/* harmony import */ var _modules_apiCall_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/apiCall.js */ "./src/modules/apiCall.js");
+/* harmony import */ var _modules_movieCounter_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/movieCounter.js */ "./src/modules/movieCounter.js");
 
 
 
 
 
-window.onload = (0,_modules_apiCall__WEBPACK_IMPORTED_MODULE_2__["default"])();
-window.onload = (0,_modules_movieCounter__WEBPACK_IMPORTED_MODULE_3__["default"])();
+window.onload = (0,_modules_apiCall_js__WEBPACK_IMPORTED_MODULE_2__["default"])();
+window.onload = (0,_modules_movieCounter_js__WEBPACK_IMPORTED_MODULE_3__["default"])();
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle21fb8e00ffa8dcff5532.js.map
+//# sourceMappingURL=bundle7bc5c1271f0bece0a4fe.js.map
