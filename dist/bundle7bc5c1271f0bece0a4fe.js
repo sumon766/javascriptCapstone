@@ -574,10 +574,6 @@ const showMovies = async () => {
       const btn = document.getElementById(`comment-button-${movie.id}`);
       const span = document.getElementsByClassName(`close${movie.id}`)[0];
 
-      // btn.onclick = function () {
-      //   modal.style.display = 'block';
-      // };
-
       btn.onclick = () => {
         modal.style.display = 'block';
       };
@@ -741,7 +737,7 @@ const commentPop = (movie, program) => {
 
   // Manual Comments Here
 
-  // Comment Form Starts Here
+  // Comment Form Here
   const form = document.createElement('form');
   form.id = 'comment-form';
   modalDescription.appendChild(form);
@@ -785,7 +781,7 @@ const commentPop = (movie, program) => {
     commentText.value = '';
   });
 
-  // Comment Form Starts Here
+  // Comment Form Here
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (commentPop);
@@ -4971,4 +4967,4 @@ window.onload = (0,_modules_movieCounter_js__WEBPACK_IMPORTED_MODULE_3__["defaul
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle94c91f321dfd01eb6081.js.map
+//# sourceMappingURL=bundle7bc5c1271f0bece0a4fe.js.map

@@ -91,10 +91,6 @@ const showMovies = async () => {
       const btn = document.getElementById(`comment-button-${movie.id}`);
       const span = document.getElementsByClassName(`close${movie.id}`)[0];
 
-      // btn.onclick = function () {
-      //   modal.style.display = 'block';
-      // };
-
       btn.onclick = () => {
         modal.style.display = 'block';
       };
