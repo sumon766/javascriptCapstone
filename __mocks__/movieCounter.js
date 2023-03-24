@@ -1,8 +1,8 @@
-import { getData } from '../src/modules/commentAPI.js';
-
-const address = 'https://api.tvmaze.com/show';
-const movieCounter = () => {
-  getData(address).then((res) => res.length);
+const movieCounter = async () => {
+  await new Promise(resolve => window.addEventListener('load', resolve));
+  const items = document.getElementsByClassName('program');
+  const numItems = items.length;
+  return numItems;
 };
 
 export default movieCounter;

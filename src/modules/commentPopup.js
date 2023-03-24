@@ -109,6 +109,7 @@ const commentPop = (movie, program) => {
     }
     name.value = '';
     commentText.value = '';
+    
   });
 
   // Comment Form Here

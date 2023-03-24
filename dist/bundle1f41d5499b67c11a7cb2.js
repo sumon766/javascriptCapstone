@@ -553,12 +553,19 @@ const showMovies = async () => {
       commentIcon.className = 'fa fa-comment';
       commentCount.appendChild(commentIcon);
 
-      (0,_commentAPI_js__WEBPACK_IMPORTED_MODULE_1__.getComments)(movie.id).then((data) => {
-        const commentNumber = document.createElement('p');
-        commentNumber.className = 'comment-number';
-        commentNumber.textContent = data.length > 0 ? data.length : 0;
-        comments.appendChild(commentNumber);
-      });
+      // getComments(movie.id).then((data) => {
+      //   const commentNumber = document.createElement('p');
+      //   commentNumber.className = 'comment-number';
+      //   commentNumber.textContent = data.length > 0 ? data.length : 0;
+      //   comments.appendChild(commentNumber);
+      // });
+      const commentNumber = document.createElement('p');
+      commentNumber.className = 'comment-number';
+      // window.addEventListener('load', () => {
+      //   var commentItems = document.getElementsByClassName('comment-container');
+      //   var numCommentItems = commentItems.length;
+      //   commentNumber.textContent = numCommentItems;
+      // });
 
       const commentButton = document.createElement('button');
       commentButton.id = `comment-button-${movie.id}`;
@@ -567,6 +574,14 @@ const showMovies = async () => {
       program.appendChild(commentButton);
 
       (0,_commentPopup_js__WEBPACK_IMPORTED_MODULE_0__["default"])(movie, program);
+
+      window.onload = () => {
+        var commentItems = document.getElementsByClassName('comment-container');
+        var numCommentItems = commentItems.length;
+        commentNumber.textContent = numCommentItems;
+        // comments.appendChild(commentNumber);
+      };
+      comments.appendChild(commentNumber);
 
       programs.appendChild(program);
 
@@ -779,6 +794,7 @@ const commentPop = (movie, program) => {
     }
     name.value = '';
     commentText.value = '';
+    
   });
 
   // Comment Form Here
@@ -803,9 +819,11 @@ __webpack_require__.r(__webpack_exports__);
 
 const address = 'https://api.tvmaze.com/show';
 const movieCounter = () => {
-  const counterSpan = document.getElementById('movie-count');
-  (0,_commentAPI_js__WEBPACK_IMPORTED_MODULE_0__.getData)(address).then((res) => {
-    counterSpan.textContent = `(${res.length})`;
+  const counterSpan = document.getElementById('movie-count');  
+  window.addEventListener('load', () => {
+    var items = document.getElementsByClassName('program');
+    var numItems = items.length;
+    counterSpan.textContent = `(${numItems})`;
   });
 };
 
@@ -4967,4 +4985,4 @@ window.onload = (0,_modules_movieCounter_js__WEBPACK_IMPORTED_MODULE_3__["defaul
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle7bc5c1271f0bece0a4fe.js.map
+//# sourceMappingURL=bundle1f41d5499b67c11a7cb2.js.map
