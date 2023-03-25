@@ -39,13 +39,16 @@ const commentPop = (movie, program) => {
   commentList.className = 'comment-list';
   modalDescription.appendChild(commentList);
 
+  const commentCountContainer = document.createElement('div');
+  commentCountContainer.className = 'count-container';
+  commentList.appendChild(commentCountContainer);
   const comments = document.createElement('h2');
 
   // Manual Comments Here
   getComments(movie.id).then((data) => {
     const count = data.length;
     comments.textContent = `Comments (${count})`;
-    commentList.appendChild(comments);
+    commentCountContainer.appendChild(comments);
     data.forEach((comment) => {
       const commentContainer = document.createElement('div');
       commentContainer.className = 'comment-container';
@@ -64,7 +67,6 @@ const commentPop = (movie, program) => {
       commentContainer.appendChild(commentMessage);
     });
   });
-
   // Manual Comments Here
 
   // Comment Form Here
@@ -106,12 +108,32 @@ const commentPop = (movie, program) => {
     e.preventDefault();
     if (name.value && commentText.value) {
       addComment(movie.id, name.value, commentText.value);
+      const commentContainer = document.createElement('div');
+      commentContainer.className = 'comment-container';
+      const commentorName = document.createElement('h4');
+      commentorName.textContent = name.value;
+      commentorName.className = 'commentor-name';
+      const commentMessage = document.createElement('p');
+      commentMessage.textContent = commentText.value;
+      commentMessage.className = 'comment-message';
+      commentContainer.appendChild(commentorName);
+      commentContainer.appendChild(commentMessage);
+      commentList.appendChild(commentContainer);
+
+      const items = document.querySelectorAll(`#comment-modal-${movie.id} .comment-container`);
+      const itemNum = items.length;
+      const comments = document.createElement('h2');
+      comments.textContent = `Comments (${itemNum})`;
+
+      while (commentCountContainer.firstChild) {
+        commentCountContainer.removeChild(commentCountContainer.firstChild);
+      }
+
+      commentCountContainer.appendChild(comments);
     }
     name.value = '';
-    commentText.value = '';
-    
-  });
-
+    commentText.value = ''; 
+});  
   // Comment Form Here
 };
 

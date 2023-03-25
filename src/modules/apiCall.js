@@ -1,6 +1,7 @@
 import commentPop from './commentPopup.js';
 import { getData, postData, getComments } from './commentAPI.js';
-
+import commentCounter from './commentCounter.js';
+console.log(commentCounter());
 const address = 'https://api.tvmaze.com/show';
 const APP_ID = 'zX9lc5HNiZeTfJrwouGw';
 
