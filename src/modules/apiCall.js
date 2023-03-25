@@ -1,5 +1,5 @@
 import commentPop from './commentPopup.js';
-import { getData, postData, getComments } from './commentAPI.js';
+import { getData, postData } from './commentAPI.js';
 import commentCounter from './commentCounter.js';
 
 const address = 'https://api.tvmaze.com/show';
@@ -101,8 +101,8 @@ const showMovies = async () => {
 
       window.addEventListener('load', () => {
         setTimeout(() => {
-          let selectCommentClass = document.getElementById(`comment-modal-${movie.id}`).getElementsByClassName('comment-container');
-          let total = commentCounter(selectCommentClass);
+          const selectCommentClass = document.getElementById(`comment-modal-${movie.id}`).getElementsByClassName('comment-container');
+          const total = commentCounter(selectCommentClass);
           const commentNumber = document.createElement('p');
           commentNumber.className = 'comment-number';
           commentNumber.textContent = total > 0 ? total : 0;

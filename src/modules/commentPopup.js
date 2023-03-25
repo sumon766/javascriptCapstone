@@ -132,8 +132,8 @@ const commentPop = (movie, program) => {
       commentCountContainer.appendChild(comments);
     }
     name.value = '';
-    commentText.value = ''; 
-});  
+    commentText.value = '';
+  });
   // Comment Form Here
 };
 
