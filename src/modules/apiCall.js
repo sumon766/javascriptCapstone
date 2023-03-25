@@ -1,7 +1,7 @@
 import commentPop from './commentPopup.js';
 import { getData, postData, getComments } from './commentAPI.js';
 import commentCounter from './commentCounter.js';
-console.log(commentCounter());
+
 const address = 'https://api.tvmaze.com/show';
 const APP_ID = 'zX9lc5HNiZeTfJrwouGw';
 
@@ -71,13 +71,6 @@ const showMovies = async () => {
       commentIcon.className = 'fa fa-comment';
       commentCount.appendChild(commentIcon);
 
-      getComments(movie.id).then((data) => {
-        const commentNumber = document.createElement('p');
-        commentNumber.className = 'comment-number';
-        commentNumber.textContent = data.length > 0 ? data.length : 0;
-        comments.appendChild(commentNumber);
-      });
-
       const commentButton = document.createElement('button');
       commentButton.id = `comment-button-${movie.id}`;
       commentButton.type = 'button';
@@ -105,6 +98,17 @@ const showMovies = async () => {
           modal.style.display = 'none';
         }
       };
+
+      window.addEventListener('load', () => {
+        setTimeout(() => {
+          let selectCommentClass = document.getElementById(`comment-modal-${movie.id}`).getElementsByClassName('comment-container');
+          let total = commentCounter(selectCommentClass);
+          const commentNumber = document.createElement('p');
+          commentNumber.className = 'comment-number';
+          commentNumber.textContent = total > 0 ? total : 0;
+          comments.appendChild(commentNumber);
+        }, 2000);
+      });
     }
   });
 };
